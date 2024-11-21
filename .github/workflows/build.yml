@@ -20,5 +20,5 @@ jobs:
     - name: Build and Push Docker image
       run: |
         docker build -t rapidfort-assigment .
-        docker tag rapidfort-assignment:latest ${{ secrets.DOCKER_USERNAME }}/rapidfort-assignment:latest
+        docker tag rapidfort-assignment ${{ secrets.DOCKER_USERNAME }}/rapidfort-assignment:latest
         docker push ${{ secrets.DOCKER_USERNAME }}/rapidfort-assignment:latest
