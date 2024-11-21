@@ -19,6 +19,6 @@ jobs:
         password: ${{secrets.DOCKER_PASSWORD }}
     - name: Build and Push Docker image
       run: |
-        docker build -t rapidfort-assigment .
+        docker build -t rapidfort-assignment .
         docker tag rapidfort-assignment ${{ secrets.DOCKER_USERNAME }}/rapidfort-assignment:latest
         docker push ${{ secrets.DOCKER_USERNAME }}/rapidfort-assignment:latest
