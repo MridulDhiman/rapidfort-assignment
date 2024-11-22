@@ -1,7 +1,7 @@
 FROM node:18-alpine AS base
 
 FROM base AS deps
-RUN apk add --no-cache libc6-compat libreoffice qpdf
+RUN apk add --no-cache libc6-compat 
 WORKDIR /app
 COPY package.json package-lock.json*  ./
 RUN npm ci
@@ -15,6 +15,10 @@ RUN npm run build
 FROM base AS runner
 WORKDIR /app
 ENV NODE_ENV=production
+RUN apk update && \
+    apk add --no-cache \
+    libreoffice \
+    qpdf 
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 RUN mkdir .next
