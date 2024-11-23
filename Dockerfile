@@ -15,10 +15,13 @@ RUN npm run build
 FROM base AS runner
 WORKDIR /app
 ENV NODE_ENV=production
-RUN apk update && \
-    apk add --no-cache \
+RUN apk add --no-cache \
     libreoffice \
-    qpdf 
+    qpdf \
+    ttf-opensans \
+    fontconfig \
+    ttf-dejavu \
+    ttf-freefont
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 RUN mkdir .next

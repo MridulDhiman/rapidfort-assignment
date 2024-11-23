@@ -29,8 +29,9 @@ Website deployed <a href="http://a88d724475d6e491abaac533666041bc-516287461.ap-s
 ## Prerequisites
 
 - Docker
-- Kubernetes cluster (local minikube cluster)
-- kubectl CLI
+- Kubernetes cluster (local minikube cluster and EKS cluster on AWS cloud)
+- kubectl and eksctl CLI
+- Node.js 
 - Git
 
 ## Quick Start
