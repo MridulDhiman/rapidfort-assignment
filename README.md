@@ -25,7 +25,6 @@ Website deployed <a href="http://a88d724475d6e491abaac533666041bc-516287461.ap-s
 - Orchestration: Kubernetes
 - CI/CD: GitHub Actions
 
-
 ## Prerequisites
 
 - Docker
@@ -79,7 +78,6 @@ kubectl apply -f service.yml
 ```
 
 
-
 ## API Endpoints
 
 ### Document Conversion API
@@ -93,22 +91,18 @@ Parameters:
 - password (optional): PDF password protection
 ```
 
-
-
-
-
 ## CI/CD Pipeline
 
 The project uses GitHub Actions for continuous integration and deployment:
 
 - Docker image building and pushing to docker hub registry
+- Manual deployment to production environment
 
-View the workflow configuration in `.github/workflows/build.yml`
+View the workflow configuration in `.github/workflows/build.yml` and `.github/workflows/deploy.yml`
 
 ## Directory Structure
 
 ```
-
 ├── .github/workflows/         
 ├── public/          
 ├── src/    
