@@ -2,6 +2,7 @@
 
 A next.js based web application that converts Word documents (.docx) to PDF format with additional features like metadata viewing and password protection.
 
+![alt text](public/image.png)
 
 ## Hosted URL
 
