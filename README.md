@@ -5,7 +5,7 @@ A next.js based web application that converts Word documents (.docx) to PDF form
 
 ## Hosted URL
 
-Website deployed <a href="http://a88d724475d6e491abaac533666041bc-516287461.ap-south-1.elb.amazonaws.com/">here</a>
+Website deployed <a href="http://a18655e6135f949cd995b302b79aaee0-1115281969.ap-south-1.elb.amazonaws.com">here</a>
 
 ## Features
 
